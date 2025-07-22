@@ -159,6 +159,7 @@ static struct usb_device_id rtw_usb_id_tbl[] = {
 	{USB_DEVICE(USB_VENDER_ID_REALTEK, 0x881a), .driver_info = RTL8812}, /* Default ID */
 	{USB_DEVICE(USB_VENDER_ID_REALTEK, 0x881b), .driver_info = RTL8812}, /* Default ID */
 	{USB_DEVICE(USB_VENDER_ID_REALTEK, 0x881c), .driver_info = RTL8812}, /* Default ID */
+	{USB_DEVICE(USB_VENDER_ID_REALTEK, 0xa81a), .driver_info = RTL8812}, /* Default ID */
 	/*=== Customer ID ===*/
 	{USB_DEVICE(0x0409, 0x0408), .driver_info = RTL8812}, /* NEC */
 	{USB_DEVICE(0x0411, 0x025d), .driver_info = RTL8812}, /* Buffalo */
