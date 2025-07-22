@@ -133,10 +133,10 @@ endif
 CONFIG_RTW_DEBUG = y
 # default log level is _DRV_INFO_ = 4,
 # please refer to "How_to_set_driver_debug_log_level.doc" to set the available level.
-CONFIG_RTW_LOG_LEVEL = 0
+CONFIG_RTW_LOG_LEVEL = 6
 
 # enable /proc/net/rtlxxxx/ debug interfaces
-CONFIG_PROC_DEBUG = n
+CONFIG_PROC_DEBUG = y
 
 ######################## Wake On Lan ##########################
 CONFIG_WOWLAN = n
@@ -1125,7 +1125,7 @@ EXTRA_CFLAGS += -DEFUSE_MAP_PATH=\"/system/etc/wifi/wifi_efuse_8189e.map\"
 else ifeq ($(MODULE_NAME), 8723bs)
 EXTRA_CFLAGS += -DEFUSE_MAP_PATH=\"/system/etc/wifi/wifi_efuse_8723bs.map\"
 else
-EXTRA_CFLAGS += -DEFUSE_MAP_PATH=\"/system/etc/wifi/wifi_efuse_$(MODULE_NAME).map\"
+EXTRA_CFLAGS += -DEFUSE_MAP_PATH=\"/etc/$(MODULE_NAME).map\"
 endif
 
 #WIFIMAC_PATH
